@@ -14,4 +14,4 @@ def connectPostgreSQL():
     print('connect successful!')
 
 if __name__=='__main__':
-    connectPostgreSQL()
+    connectPostgreSQL(i)
