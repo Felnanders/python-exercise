@@ -19,11 +19,7 @@ def write_coupon():
     tablenames = cur.fetchall()
 
     # 判断表是否存在
-    found = False
-    if ('coupon',) in tablenames:
-        found = True
-
-    if not found:
+    if ('coupon',) not in tablenames:
         cur.execute('CREATE TABLE coupon(ID INTEGER, code VARCHAR(10));')
         print('creat table successfully!')
     
